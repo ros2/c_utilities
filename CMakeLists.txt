@@ -240,6 +240,13 @@ if(BUILD_TESTING)
     target_link_libraries(test_allocator ${PROJECT_NAME} osrf_testing_tools_cpp::memory_tools)
   endif()
 
+  rcutils_custom_add_gtest(test_assert
+    test/test_assert.cpp
+  )
+  if(TARGET test_assert)
+    target_link_libraries(test_assert ${PROJECT_NAME})
+  endif()
+
   rcutils_custom_add_gtest(test_char_array
     test/test_char_array.cpp
   )

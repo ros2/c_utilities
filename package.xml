@@ -6,6 +6,7 @@
   <description>Package containing various utility types and functions for C</description>
   <maintainer email="karsten@osrfoundation.org">Karsten Knese</maintainer>
   <license>Apache License 2.0</license>
+  <license>BSD-3-Clause</license>
 
   <buildtool_depend>ament_cmake_ros</buildtool_depend>
   <buildtool_depend>python3-empy</buildtool_depend>
