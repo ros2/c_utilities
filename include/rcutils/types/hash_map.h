@@ -29,13 +29,13 @@ extern "C"
 #include "rcutils/macros.h"
 #include "rcutils/visibility_control.h"
 
-struct rcutils_hash_map_impl_t;
+struct rcutils_hash_map_impl;
 
 /// The structure holding the metadata for a hash map.
-typedef struct RCUTILS_PUBLIC_TYPE rcutils_hash_map_t
+typedef struct RCUTILS_PUBLIC_TYPE rcutils_hash_map
 {
   /// A pointer to the PIMPL implementation type.
-  struct rcutils_hash_map_impl_t * impl;
+  struct rcutils_hash_map_impl * impl;
 } rcutils_hash_map_t;
 
 /// The function signature for a key hashing function.

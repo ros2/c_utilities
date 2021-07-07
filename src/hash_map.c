@@ -32,14 +32,14 @@ extern "C"
 #define LOAD_FACTOR         (0.75)
 #define BUCKET_INITIAL_CAP  ((size_t)2)
 
-typedef struct rcutils_hash_map_entry_t
+typedef struct rcutils_hash_map_entry
 {
   size_t hashed_key;
   void * key;
   void * value;
 } rcutils_hash_map_entry_t;
 
-typedef struct rcutils_hash_map_impl_t
+typedef struct rcutils_hash_map_impl
 {
   // This is the array of buckets that will store the keypairs
   rcutils_array_list_t * map;
